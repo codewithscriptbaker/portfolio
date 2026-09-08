@@ -1,0 +1,56 @@
+/*
+  Optional alternate palettes (all distinct from teal/blue templates).
+  Copy a :root + .dark block into globals.css to switch.
+*/
+
+/* --------- Plum Charcoal --------- */
+/*
+:root {
+  --background: 300 8% 97%;
+  --foreground: 300 12% 12%;
+  --border: 300 8% 86%;
+  --destructive: 0 72% 48%;
+  --destructive-foreground: 0 0% 98%;
+  --accent: 320 42% 36%;
+  --accent-foreground: 300 8% 98%;
+  --muted: 300 10% 93%;
+  --muted-foreground: 300 8% 40%;
+}
+.dark {
+  --background: 300 14% 8%;
+  --foreground: 300 10% 95%;
+  --border: 300 10% 18%;
+  --destructive: 0 58% 42%;
+  --destructive-foreground: 0 0% 98%;
+  --accent: 320 48% 62%;
+  --accent-foreground: 300 14% 8%;
+  --muted: 300 12% 13%;
+  --muted-foreground: 300 8% 66%;
+}
+*/
+
+/* --------- Olive Stone --------- */
+/*
+:root {
+  --background: 70 12% 97%;
+  --foreground: 80 16% 12%;
+  --border: 70 10% 86%;
+  --destructive: 0 72% 48%;
+  --destructive-foreground: 0 0% 98%;
+  --accent: 85 38% 32%;
+  --accent-foreground: 70 12% 98%;
+  --muted: 70 10% 93%;
+  --muted-foreground: 80 8% 40%;
+}
+.dark {
+  --background: 80 14% 8%;
+  --foreground: 70 12% 95%;
+  --border: 80 10% 18%;
+  --destructive: 0 58% 42%;
+  --destructive-foreground: 0 0% 98%;
+  --accent: 80 42% 52%;
+  --accent-foreground: 80 14% 8%;
+  --muted: 80 12% 13%;
+  --muted-foreground: 70 8% 66%;
+}
+*/

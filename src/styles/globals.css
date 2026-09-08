@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  Custom palette — Copper & Stone
+*/
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  :root {
+    --background: 40 12% 97%;
+    --foreground: 20 18% 12%;
+    --border: 30 10% 86%;
+    --destructive: 0 72% 48%;
+    --destructive-foreground: 0 0% 98%;
+    --accent: 18 68% 42%;
+    --accent-foreground: 40 12% 98%;
+    --muted: 35 12% 93%;
+    /* Darker muted text for WCAG AA on light backgrounds */
+    --muted-foreground: 25 10% 32%;
+  }
+
+  .dark {
+    --background: 20 16% 8%;
+    --foreground: 35 15% 95%;
+    --border: 25 12% 18%;
+    --destructive: 0 58% 42%;
+    --destructive-foreground: 0 0% 98%;
+    --accent: 22 78% 58%;
+    --accent-foreground: 20 16% 8%;
+    --muted: 25 12% 13%;
+    /* Lighter muted text for WCAG AA on dark backgrounds */
+    --muted-foreground: 30 12% 78%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply min-h-screen bg-background text-foreground;
+    background-image:
+      radial-gradient(
+        ellipse 70% 45% at 100% 0%,
+        hsl(var(--accent) / 0.09),
+        transparent 55%
+      ),
+      radial-gradient(
+        ellipse 55% 35% at 0% 100%,
+        hsl(18 40% 50% / 0.06),
+        transparent 50%
+      );
+  }
+
+  :focus-visible {
+    outline: 2px solid hsl(var(--accent));
+    outline-offset: 2px;
+  }
+}
