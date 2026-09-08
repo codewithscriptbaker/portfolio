@@ -76,8 +76,7 @@ export const PROJECTS_CARD: PortfolioProject[] = [
     name: "Portfolio",
     favicon: "/favicon.svg",
     imageUrl: ["/images/projects/covers/portfolio.svg"],
-    imageAlt:
-      "Portfolio homepage mockup for Muhammad Sawaiz AI Engineer site",
+    imageAlt: "Portfolio homepage mockup for Muhammad Sawaiz AI Engineer site",
     description:
       "Personal portfolio for AI engineering work in ML, NLP, and offline production systems.",
     sourceCodeHref: siteMetadata.siteRepo,

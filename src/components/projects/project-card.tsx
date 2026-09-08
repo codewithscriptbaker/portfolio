@@ -38,7 +38,10 @@ export default function ProjectCard(props: ProjectCardProps) {
             alt={props.imageAlt}
           />
         ) : (
-          <div className="relative w-full overflow-hidden" style={{ aspectRatio: 2.1 }}>
+          <div
+            className="relative w-full overflow-hidden"
+            style={{ aspectRatio: 2.1 }}
+          >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={props.imageUrl[0]}
@@ -72,7 +75,9 @@ export default function ProjectCard(props: ProjectCardProps) {
             >
               {open ? "Hide case study" : "Read case study"}
               <FiChevronDown
-                className={`h-4 w-4 transition-transform ${open ? "rotate-180" : ""}`}
+                className={`h-4 w-4 transition-transform ${
+                  open ? "rotate-180" : ""
+                }`}
               />
             </Button>
             <AnimatePresence initial={false}>
@@ -84,7 +89,7 @@ export default function ProjectCard(props: ProjectCardProps) {
                   transition={{ duration: 0.25 }}
                   className="overflow-hidden"
                 >
-                  <dl className="mt-3 space-y-3 rounded-md border border-accent/15 bg-muted/50 p-3 text-sm dark:bg-zinc-800/60">
+                  <dl className="border-accent/15 mt-3 space-y-3 rounded-md border bg-muted/50 p-3 text-sm dark:bg-zinc-800/60">
                     <div>
                       <dt className="font-semibold text-accent">Problem</dt>
                       <dd className="mt-1 text-zinc-700 dark:text-zinc-300">

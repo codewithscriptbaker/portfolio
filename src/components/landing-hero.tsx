@@ -21,7 +21,7 @@ export default function LandingHero() {
     <>
       <section
         id="home"
-        className="relative z-10 isolate bg-background px-6 pb-20 pt-4 sm:px-14 md:px-20 md:pb-28"
+        className="relative isolate z-10 bg-background px-6 pb-20 pt-4 sm:px-14 md:px-20 md:pb-28"
       >
         <div className="mx-auto flex min-h-[calc(100vh-7rem)] max-w-7xl items-center">
           <div className="w-full">
@@ -60,10 +60,7 @@ export default function LandingHero() {
             </FadeUp>
             <FadeUp duration={0.55} delay={0.25}>
               <div className="mt-10 flex flex-wrap items-center gap-3">
-                <Button
-                  variant="primary"
-                  onClick={() => setIsOpenModal(true)}
-                >
+                <Button variant="primary" onClick={() => setIsOpenModal(true)}>
                   Get in touch
                 </Button>
                 <Button

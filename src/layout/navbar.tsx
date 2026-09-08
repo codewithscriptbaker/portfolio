@@ -11,10 +11,7 @@ import MobileMenu from "@/components/utility/mobile-menu";
 import { GithubIcon, LinkedinIcon } from "@/components/icons";
 import { classNames } from "@/utility/classNames";
 import { siteMetadata } from "@/data/siteMetaData.mjs";
-import {
-  scrollToSection,
-  useActiveSection,
-} from "@/hooks/useActiveSection";
+import { scrollToSection, useActiveSection } from "@/hooks/useActiveSection";
 
 export type NavbarRoute = {
   title: string;

@@ -27,7 +27,7 @@ export default function ExperienceShowcaseList(
     <section
       id={props.id}
       className={classNames(
-        "relative z-10 isolate overflow-hidden bg-background px-6 py-24 sm:px-14 md:px-20",
+        "relative isolate z-10 overflow-hidden bg-background px-6 py-24 sm:px-14 md:px-20",
         "scroll-mt-24 border-t border-border/60",
         props.className,
       )}

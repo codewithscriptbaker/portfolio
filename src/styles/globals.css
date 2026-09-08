@@ -42,8 +42,7 @@
 
   body {
     @apply min-h-screen bg-background text-foreground;
-    background-image:
-      radial-gradient(
+    background-image: radial-gradient(
         ellipse 70% 45% at 100% 0%,
         hsl(var(--accent) / 0.09),
         transparent 55%

@@ -6,6 +6,7 @@ You already have a strong foundation: you can train models, run inference, and b
 To stand out in the current AI market, your portfolio should show **end-to-end product ownership**, not just notebook experiments.
 
 This document gives you:
+
 - High-impact project ideas
 - Ranked recommendations based on your current skills
 - A 30-day execution roadmap
@@ -18,6 +19,7 @@ This document gives you:
 ## What Recruiters Want To See in 2026
 
 Most candidates can call an API or build a basic chatbot. Strong profiles prove they can:
+
 - Define a real problem and business use case
 - Build robust data + model + app pipelines
 - Evaluate output quality and reduce hallucinations
@@ -33,6 +35,7 @@ If you show this clearly, your profile becomes much stronger.
 ## 1) Production-Ready RAG Assistant (Top Recommendation)
 
 Build a domain-focused assistant (for legal docs, finance reports, medical guidelines, SOPs, etc.) with:
+
 - Document ingestion pipeline
 - Chunking strategy + metadata
 - Embeddings + vector search
@@ -42,6 +45,7 @@ Build a domain-focused assistant (for legal docs, finance reports, medical guide
 - Monitoring + feedback loop
 
 ### Why this project is strongest
+
 - Very high market demand
 - Shows both ML and software engineering depth
 - Easy to demo with clear business value
@@ -52,48 +56,61 @@ Build a domain-focused assistant (for legal docs, finance reports, medical guide
 ## 10 Project Ideas to Make Profile Strong
 
 1. **RAG for Real-World Domain**
+
    - Domain documents + citation-backed answers + eval dashboard
 
 2. **LLM Evaluation Platform**
+
    - Compare models/prompts on quality, latency, and cost
 
 3. **Customer Support AI Copilot**
+
    - Ticket classification + response suggestions + human handoff
 
 4. **Multimodal Document Intelligence**
+
    - OCR + extraction from invoices/contracts + validation pipeline
 
 5. **Fine-Tuned Small Model (LoRA/QLoRA)**
+
    - Task-specific adaptation + optimized inference
 
 6. **Tool-Calling AI Agent**
+
    - Agent with DB/API tool execution + retries + safety checks
 
 7. **MLOps End-to-End Pipeline**
+
    - DVC/MLflow + retraining + model registry + drift checks
 
 8. **Real-Time Inference System**
+
    - Streaming ingestion + low-latency prediction architecture
 
 9. **Recommendation Engine + A/B Simulation**
+
    - Ranking + metrics + experiment logic
 
 10. **Voice + Text Operations Assistant**
-   - Speech-to-text + workflow execution + logs
+
+- Speech-to-text + workflow execution + logs
 
 ---
 
 ## Ranked List for Your Current Skill Set (Python + Training + Pipelines)
 
 ### Rank 1: Production RAG Assistant
+
 - Fastest path to a strong, modern AI profile
 - High interview relevance across startups and product teams
 
 ### Rank 2: LLM Evaluation Platform
+
 - Differentiates you from "chatbot-only" profiles
 - Shows maturity in AI quality engineering
 
 ### Rank 3: Customer Support AI Copilot
+
 - Strong business narrative and measurable impact
 - Demonstrates practical AI decision systems
 
@@ -104,6 +121,7 @@ If time is limited, build Rank 1 deeply instead of building many shallow project
 ## 30-Day Execution Roadmap (For Rank 1 Project)
 
 ## Week 1: Problem + Data + Baseline
+
 - Pick one domain and define user persona
 - Collect 200-1000 domain documents
 - Build ingestion pipeline (PDF/HTML/TXT loaders)
@@ -113,6 +131,7 @@ If time is limited, build Rank 1 deeply instead of building many shallow project
 **Deliverable:** working baseline demo with citations
 
 ## Week 2: Retrieval Quality + Guardrails
+
 - Improve chunking (size/overlap experiments)
 - Add metadata filters (doc type/date/tags)
 - Add reranker for better top-k retrieval quality
@@ -122,6 +141,7 @@ If time is limited, build Rank 1 deeply instead of building many shallow project
 **Deliverable:** improved retrieval precision and safer answers
 
 ## Week 3: Evaluation + Performance
+
 - Build eval dataset (50-150 Q/A pairs)
 - Track metrics: faithfulness, context relevance, answer relevance
 - Log latency and cost per request
@@ -131,6 +151,7 @@ If time is limited, build Rank 1 deeply instead of building many shallow project
 **Deliverable:** benchmark table with before/after improvements
 
 ## Week 4: Deployment + Portfolio Packaging
+
 - Backend: FastAPI endpoints
 - Frontend: simple chat UI (Streamlit or React)
 - Containerize with Docker
@@ -190,6 +211,7 @@ ai-rag-assistant/
 ## What to Show in README (Most Important)
 
 Your README should include:
+
 - Problem statement and target users
 - Architecture diagram
 - Key design decisions and trade-offs
@@ -218,12 +240,14 @@ Replace X/Y with real numbers from your project.
 ## Portfolio Strategy: Quality > Quantity
 
 Do this:
+
 - Build 1 flagship project deeply
 - Add 1 supporting project (evaluation or MLOps)
 - Keep code clean and documented
 - Include metrics and trade-offs
 
 Avoid this:
+
 - 10 shallow chatbot clones
 - No evaluation metrics
 - No deployment
@@ -257,12 +281,10 @@ Day 14: demo video + LinkedIn/GitHub post
 
 If all are checked, your profile will look significantly stronger than average candidates.
 
-
-
 ok give me some plan
-last day i give test in turing whch was about python developer. which i failed badly becuase i have not preparpe it neither practise from leetcode 
+last day i give test in turing whch was about python developer. which i failed badly becuase i have not preparpe it neither practise from leetcode
 i am planning to find remote job with flexiable hours.
 currently i also want you to check my LinkedIn profile i am adding its link what improvement should i made there
-https://www.linkedin.com/in/muhammad-sawaiz-668976248/ 
+https://www.linkedin.com/in/muhammad-sawaiz-668976248/
 
-what should i add in profile before further apply in companies and also i am adding a resuem of mine to check out it also@c:\Users\Win 10\Downloads\Muhammad Sawaiz_Resume_1.1.pdf 
+what should i add in profile before further apply in companies and also i am adding a resuem of mine to check out it also@c:\Users\Win 10\Downloads\Muhammad Sawaiz_Resume_1.1.pdf

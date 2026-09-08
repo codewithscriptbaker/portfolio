@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer
       id="contact"
-      className="relative z-10 isolate flex w-full scroll-mt-24 flex-col items-center gap-16 border-t border-border/60 bg-background px-6 py-10 sm:px-14 md:px-20"
+      className="relative isolate z-10 flex w-full scroll-mt-24 flex-col items-center gap-16 border-t border-border/60 bg-background px-6 py-10 sm:px-14 md:px-20"
     >
       <ScrollReveal className="w-full max-w-7xl">
         <div className="mx-auto flex w-full flex-col items-center gap-8 rounded-2xl bg-accent p-8 text-background sm:p-12 md:gap-10 lg:p-16">
@@ -16,8 +16,8 @@ export default function Footer() {
               Contact
             </span>
             <p className="mx-auto mt-4 max-w-xl text-sm text-background sm:text-base">
-              Open to AI engineering roles, freelance work, and collaborations on
-              offline / RAG / NLP systems.
+              Open to AI engineering roles, freelance work, and collaborations
+              on offline / RAG / NLP systems.
             </p>
           </div>
           <p className="text-center text-lg font-semibold sm:text-2xl lg:text-3xl">

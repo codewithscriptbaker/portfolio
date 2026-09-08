@@ -31,7 +31,7 @@ function ShowCaseLiIcon(props: ExperienceListIconProps) {
           cx="50"
           cy="27"
           r="20"
-          className="fill-background stroke-[5px] stroke-background"
+          className="fill-background stroke-background stroke-[5px]"
         />
         <circle cx="50" cy="27" r="10" className="fill-accent stroke-1" />
       </svg>

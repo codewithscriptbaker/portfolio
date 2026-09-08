@@ -31,7 +31,7 @@ export default function SkillsShowcase({ skills }: SkillsShowcaseProps) {
   return (
     <section
       id="skills"
-      className="relative z-10 isolate scroll-mt-24 overflow-x-clip border-t border-border/60 bg-background px-6 py-24 sm:px-14 md:px-20"
+      className="relative isolate z-10 scroll-mt-24 overflow-x-clip border-t border-border/60 bg-background px-6 py-24 sm:px-14 md:px-20"
     >
       <div className="relative mx-auto max-w-7xl">
         <ScrollReveal>
