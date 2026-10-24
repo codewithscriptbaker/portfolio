@@ -27,7 +27,7 @@ export default function HomeAbout() {
   return (
     <section
       id="about"
-      className="relative isolate z-10 scroll-mt-24 border-t border-border/60 bg-background px-6 py-12 sm:px-14 sm:py-16 md:px-20 md:py-24"
+      className="relative isolate z-10 scroll-mt-24 border-t border-border/60 bg-background px-6 py-8 sm:px-14 sm:py-10 md:px-20 md:py-14"
     >
       <div className="mx-auto max-w-7xl">
         <ScrollReveal>
@@ -39,7 +39,7 @@ export default function HomeAbout() {
           </p>
         </ScrollReveal>
 
-        <div className="mt-6 grid gap-8 sm:mt-8 lg:grid-cols-[1.4fr_1fr] lg:gap-16">
+        <div className="mt-5 grid gap-6 sm:mt-6 lg:grid-cols-[1.4fr_1fr] lg:gap-12">
           <ScrollReveal delay={0.08}>
             <div className="space-y-5 text-base font-medium leading-relaxed text-zinc-800 dark:text-zinc-200 sm:text-lg">
               <p>

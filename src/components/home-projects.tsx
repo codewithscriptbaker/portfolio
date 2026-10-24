@@ -7,7 +7,7 @@ export default function HomeProjects() {
   return (
     <section
       id="projects"
-      className="relative isolate z-10 scroll-mt-24 border-t border-border/60 bg-background px-6 py-12 sm:px-14 sm:py-16 md:px-20 md:py-24"
+      className="relative isolate z-10 scroll-mt-24 border-t border-border/60 bg-background px-6 py-8 sm:px-14 sm:py-10 md:px-20 md:py-14"
     >
       <div className="mx-auto max-w-7xl">
         <ScrollReveal>
@@ -20,7 +20,7 @@ export default function HomeProjects() {
           </p>
         </ScrollReveal>
 
-        <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-6 sm:mt-8 sm:gap-y-8 md:gap-y-10 lg:grid-cols-2">
+        <div className="mt-5 grid grid-cols-1 gap-x-6 gap-y-5 sm:mt-6 sm:gap-y-6 md:gap-y-8 lg:grid-cols-2">
           {PROJECTS_CARD.map((card, index) => (
             <ProjectCard
               key={card.name}
@@ -30,7 +30,7 @@ export default function HomeProjects() {
           ))}
         </div>
 
-        <ScrollReveal className="mt-10 sm:mt-14" delay={0.05}>
+        <ScrollReveal className="mt-8 sm:mt-10" delay={0.05}>
           <p className="text-center text-base text-foreground md:text-lg">
             More work on{" "}
             <a

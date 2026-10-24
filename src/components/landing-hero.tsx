@@ -21,9 +21,9 @@ export default function LandingHero() {
     <>
       <section
         id="home"
-        className="relative isolate z-10 bg-background px-6 pb-12 pt-4 sm:px-14 sm:pb-16 md:px-20 md:pb-28"
+        className="relative isolate z-10 bg-background px-6 pb-8 pt-4 sm:px-14 sm:pb-10 md:px-20 md:pb-12"
       >
-        <div className="mx-auto flex min-h-0 max-w-7xl items-center md:min-h-[calc(100vh-7rem)]">
+        <div className="mx-auto flex max-w-7xl items-center">
           <div className="w-full">
             <FadeUp duration={0.55}>
               <div className="mb-6 inline-flex items-center gap-2 rounded-md border border-accent/30 bg-accent/10 px-3 py-1.5 text-sm font-medium text-accent">
