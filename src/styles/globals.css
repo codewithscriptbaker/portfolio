@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /*
-  Custom palette — Copper & Stone
+  CleanCraft palette — Forest & Teal
 */
 @layer base {
   html {
@@ -11,29 +11,34 @@
   }
 
   :root {
-    --background: 40 12% 97%;
-    --foreground: 20 18% 12%;
-    --border: 30 10% 86%;
+    --background: 90 14% 96%;
+    --foreground: 165 20% 7%;
+    --border: 140 12% 86%;
     --destructive: 0 72% 48%;
     --destructive-foreground: 0 0% 98%;
-    --accent: 18 68% 42%;
-    --accent-foreground: 40 12% 98%;
-    --muted: 35 12% 93%;
-    /* Darker muted text for WCAG AA on light backgrounds */
-    --muted-foreground: 25 10% 32%;
+    --accent: 174 78% 26%;
+    --accent-foreground: 90 14% 98%;
+    --muted: 120 10% 92%;
+    --muted-foreground: 165 8% 34%;
+    --brand-dark: 175 30% 8%;
+    --brand-mint: 166 72% 64%;
+    --brand-warm: 18 68% 42%;
   }
 
   .dark {
-    --background: 20 16% 8%;
-    --foreground: 35 15% 95%;
-    --border: 25 12% 18%;
+    --background: 175 28% 7%;
+    --foreground: 120 15% 94%;
+    --border: 170 16% 18%;
     --destructive: 0 58% 42%;
     --destructive-foreground: 0 0% 98%;
-    --accent: 22 78% 58%;
-    --accent-foreground: 20 16% 8%;
-    --muted: 25 12% 13%;
-    /* Lighter muted text for WCAG AA on dark backgrounds */
-    --muted-foreground: 30 12% 78%;
+    --accent: 166 72% 58%;
+    --accent-foreground: 175 30% 8%;
+    --muted: 170 18% 12%;
+    --muted-foreground: 160 12% 72%;
+    /* Slightly lifted so brand bands stay distinct from page bg */
+    --brand-dark: 175 26% 11%;
+    --brand-mint: 166 72% 64%;
+    --brand-warm: 18 68% 52%;
   }
 
   * {
@@ -43,13 +48,13 @@
   body {
     @apply min-h-screen bg-background text-foreground;
     background-image: radial-gradient(
-        ellipse 70% 45% at 100% 0%,
-        hsl(var(--accent) / 0.09),
+        ellipse 65% 40% at 100% 0%,
+        hsl(var(--brand-mint) / 0.12),
         transparent 55%
       ),
       radial-gradient(
-        ellipse 55% 35% at 0% 100%,
-        hsl(18 40% 50% / 0.06),
+        ellipse 50% 35% at 0% 100%,
+        hsl(var(--accent) / 0.08),
         transparent 50%
       );
   }
@@ -57,5 +62,32 @@
   :focus-visible {
     outline: 2px solid hsl(var(--accent));
     outline-offset: 2px;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .brand-dark {
+    background-color: hsl(var(--brand-dark));
+    color: hsl(120 15% 94%);
+  }
+
+  .brand-mint {
+    color: hsl(var(--brand-mint));
+  }
+
+  .bg-brand-mint {
+    background-color: hsl(var(--brand-mint));
+  }
+
+  .text-brand-warm {
+    color: hsl(var(--brand-warm));
+  }
+
+  .bg-brand-warm\/10 {
+    background-color: hsl(var(--brand-warm) / 0.1);
   }
 }

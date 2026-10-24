@@ -1,10 +1,10 @@
 import { NavbarRoutes } from "@/layout/navbar";
 
 export const routes: NavbarRoutes = [
-  { title: "Home", href: "#home" },
-  { title: "About", href: "#about" },
-  { title: "Skills", href: "#skills" },
-  { title: "Projects", href: "#projects" },
-  { title: "Experience", href: "#experience" },
-  { title: "Contact", href: "#contact" },
+  { title: "Services", href: "#services" },
+  { title: "Why us", href: "#why" },
+  { title: "Our work", href: "#work" },
+  { title: "Process", href: "#process" },
+  { title: "Engagement", href: "#pricing" },
+  { title: "FAQ", href: "#faq" },
 ];

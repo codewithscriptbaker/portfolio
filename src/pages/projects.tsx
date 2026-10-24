@@ -5,7 +5,7 @@ export default function ProjectsRedirect() {
   const router = useRouter();
 
   useEffect(() => {
-    router.replace("/#projects");
+    router.replace("/#work");
   }, [router]);
 
   return null;

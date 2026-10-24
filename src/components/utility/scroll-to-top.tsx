@@ -21,7 +21,7 @@ export default function ScrollToTop() {
   }, []);
 
   const handleClick = () => {
-    scrollToSection("#home");
+    scrollToSection("#top");
   };
 
   return (
