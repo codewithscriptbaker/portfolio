@@ -31,7 +31,7 @@ export default function SkillsShowcase({ skills }: SkillsShowcaseProps) {
   return (
     <section
       id="skills"
-      className="relative isolate z-10 scroll-mt-24 overflow-x-clip border-t border-border/60 bg-background px-6 py-24 sm:px-14 md:px-20"
+      className="relative isolate z-10 scroll-mt-24 overflow-x-clip border-t border-border/60 bg-background px-6 py-12 sm:px-14 sm:py-16 md:px-20 md:py-24"
     >
       <div className="relative mx-auto max-w-7xl">
         <ScrollReveal>
@@ -49,7 +49,7 @@ export default function SkillsShowcase({ skills }: SkillsShowcaseProps) {
           return (
             <motion.div
               key={section.sectionName}
-              className="mt-8"
+              className="mt-6 sm:mt-8"
               initial="hidden"
               whileInView="visible"
               viewport={scrollViewport}
@@ -66,7 +66,7 @@ export default function SkillsShowcase({ skills }: SkillsShowcaseProps) {
                 {section.sectionName}
               </motion.span>
               <div
-                className={`mt-3 flex flex-wrap gap-3 sm:gap-4 ${
+                className={`mt-2.5 flex flex-wrap gap-2 sm:mt-3 sm:gap-3 md:gap-4 ${
                   isSupporting ? "opacity-90" : ""
                 }`}
               >
@@ -85,7 +85,7 @@ export default function SkillsShowcase({ skills }: SkillsShowcaseProps) {
         })}
 
         {supporting.length > 0 && (
-          <div className="mt-8">
+          <div className="mt-6 sm:mt-8">
             <Button
               variant="secondary"
               onClick={() => setShowSupporting((v) => !v)}

@@ -27,14 +27,14 @@ export default function ExperienceShowcaseList(
     <section
       id={props.id}
       className={classNames(
-        "relative isolate z-10 overflow-hidden bg-background px-6 py-24 sm:px-14 md:px-20",
+        "relative isolate z-10 overflow-hidden bg-background px-6 py-12 sm:px-14 sm:py-16 md:px-20 md:py-24",
         "scroll-mt-24 border-t border-border/60",
         props.className,
       )}
     >
       <div className="mx-auto max-w-7xl">
         <ScrollReveal>
-          <h2 className="mb-12 w-full bg-gradient-to-r from-accent/70 to-accent bg-clip-text text-center text-3xl font-bold text-transparent xs:text-4xl sm:mb-16 sm:text-5xl md:text-6xl">
+          <h2 className="mb-8 w-full bg-gradient-to-r from-accent/70 to-accent bg-clip-text text-center text-2xl font-bold text-transparent xs:text-3xl sm:mb-12 sm:text-4xl md:mb-16 md:text-5xl lg:text-6xl">
             {props.title}
           </h2>
         </ScrollReveal>

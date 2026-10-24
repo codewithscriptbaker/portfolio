@@ -21,9 +21,9 @@ export default function LandingHero() {
     <>
       <section
         id="home"
-        className="relative isolate z-10 bg-background px-6 pb-20 pt-4 sm:px-14 md:px-20 md:pb-28"
+        className="relative isolate z-10 bg-background px-6 pb-12 pt-4 sm:px-14 sm:pb-16 md:px-20 md:pb-28"
       >
-        <div className="mx-auto flex min-h-[calc(100vh-7rem)] max-w-7xl items-center">
+        <div className="mx-auto flex min-h-0 max-w-7xl items-center md:min-h-[calc(100vh-7rem)]">
           <div className="w-full">
             <FadeUp duration={0.55}>
               <div className="mb-6 inline-flex items-center gap-2 rounded-md border border-accent/30 bg-accent/10 px-3 py-1.5 text-sm font-medium text-accent">
@@ -35,15 +35,15 @@ export default function LandingHero() {
               </div>
             </FadeUp>
             <FadeUp duration={0.55} delay={0.05}>
-              <h1 className="bg-accent bg-clip-text py-2 text-5xl font-bold text-transparent sm:text-6xl md:text-7xl xl:text-8xl">
+              <h1 className="bg-accent bg-clip-text py-1 text-4xl font-bold text-transparent xs:text-5xl sm:py-2 sm:text-6xl md:text-7xl xl:text-8xl">
                 Muhammad Sawaiz
               </h1>
-              <span className="text-xl font-semibold text-zinc-900 dark:text-zinc-100 md:text-3xl">
+              <span className="text-lg font-semibold text-zinc-900 dark:text-zinc-100 sm:text-xl md:text-3xl">
                 AI Engineer | Machine Learning &amp; NLP
               </span>
             </FadeUp>
             <FadeUp duration={0.55} delay={0.15}>
-              <p className="mt-8 max-w-3xl text-base font-medium leading-relaxed text-zinc-800 dark:text-zinc-200 sm:text-lg md:text-xl">
+              <p className="mt-5 max-w-3xl text-base font-medium leading-relaxed text-zinc-800 dark:text-zinc-200 sm:mt-8 sm:text-lg md:text-xl">
                 I design and ship production AI systems for multilingual
                 translation, speech transcription, document intelligence, and
                 structured reporting — including air-gapped deployments. Stack
@@ -59,7 +59,7 @@ export default function LandingHero() {
               </p>
             </FadeUp>
             <FadeUp duration={0.55} delay={0.25}>
-              <div className="mt-10 flex flex-wrap items-center gap-3">
+              <div className="mt-6 flex flex-wrap items-center gap-3 sm:mt-10">
                 <Button variant="primary" onClick={() => setIsOpenModal(true)}>
                   Get in touch
                 </Button>

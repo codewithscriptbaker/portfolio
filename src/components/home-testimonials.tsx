@@ -9,7 +9,7 @@ export default function HomeTestimonials() {
   return (
     <section
       id="testimonials"
-      className="relative isolate z-10 scroll-mt-24 border-t border-border/60 bg-background px-6 py-24 sm:px-14 md:px-20"
+      className="relative isolate z-10 scroll-mt-24 border-t border-border/60 bg-background px-6 py-12 sm:px-14 sm:py-16 md:px-20 md:py-24"
     >
       <div className="mx-auto max-w-7xl">
         <ScrollReveal>
@@ -21,7 +21,7 @@ export default function HomeTestimonials() {
           </p>
         </ScrollReveal>
 
-        <div className="mt-10 grid gap-6 md:grid-cols-2">
+        <div className="mt-6 grid gap-4 sm:mt-8 sm:gap-6 md:grid-cols-2">
           {TESTIMONIALS.map((item) => (
             <ScrollReveal key={`${item.name}-${item.role}`}>
               <blockquote className="h-full rounded-xl border border-accent/20 bg-white p-6 dark:bg-zinc-900">

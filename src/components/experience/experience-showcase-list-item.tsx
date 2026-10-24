@@ -57,7 +57,7 @@ export default function ExperienceShowcaseListItem(
   return (
     <li
       ref={ref}
-      className="relative mx-auto mb-14 flex w-[90%] flex-col gap-1 pl-14 sm:w-[80%] sm:pl-16 md:w-[70%]"
+      className="relative mx-auto mb-8 flex w-[90%] flex-col gap-1 pl-14 last:mb-0 sm:mb-10 sm:w-[80%] sm:pl-16 md:mb-14 md:w-[70%]"
     >
       <ShowCaseLiIcon iconRef={ref} />
       <motion.div
