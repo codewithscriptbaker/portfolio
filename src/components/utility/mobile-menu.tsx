@@ -60,7 +60,7 @@ export default function MobileMenu({
                 <ThemeSwitch setClose={setOpenMenu} />
               </div>
               <div className="absolute bottom-0 py-6">
-                ©{new Date().getFullYear()} CleanCraft
+                ©2026 Muhammad Sawaiz
               </div>
             </Dialog.Panel>
           </Transition.Child>

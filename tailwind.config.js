@@ -20,15 +20,6 @@ module.exports = {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",
         },
-        brand: {
-          dark: "hsl(var(--brand-dark))",
-          mint: "hsl(var(--brand-mint))",
-          warm: "hsl(var(--brand-warm))",
-        },
-      },
-      fontFamily: {
-        display: ["Sora", "Manrope", "sans-serif"],
-        sans: ["Manrope", "sans-serif"],
       },
       screens: {
         xs: "360px",

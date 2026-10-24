@@ -16,8 +16,8 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <DefaultSeo
-        defaultTitle={siteMetadata.title}
-        description="CleanCraft builds private, air-gapped AI for translation, transcription, and document intelligence."
+        defaultTitle={`${siteMetadata.author} | ${siteMetadata.description}`}
+        description={siteMetadata.description}
         openGraph={{
           type: "website",
           locale: siteMetadata.locale,
@@ -26,7 +26,7 @@ export default function App({ Component, pageProps }: AppProps) {
           images: [
             {
               url: `${siteMetadata.siteUrl}${siteMetadata.twitterImage}`,
-              alt: "CleanCraft — Private AI Systems",
+              alt: `${siteMetadata.author} - Portfolio`,
             },
           ],
         }}

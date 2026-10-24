@@ -3,17 +3,14 @@ import { useEffect } from "react";
 
 import { NextSeo } from "next-seo";
 
-import AboutSection from "@/components/company/about-section";
-import CompanyHero from "@/components/company/company-hero";
-import ContactSection from "@/components/company/contact-section";
-import FaqSection from "@/components/company/faq-section";
-import PricingSection from "@/components/company/pricing-section";
-import ProcessSection from "@/components/company/process-section";
-import ServicesSection from "@/components/company/services-section";
-import TechSection from "@/components/company/tech-section";
-import TrustedBy from "@/components/company/trusted-by";
-import WhySection from "@/components/company/why-section";
-import WorkSection from "@/components/company/work-section";
+import LandingHero from "@/components/landing-hero";
+import HomeAbout from "@/components/home-about";
+import SkillsShowcase from "@/components/skills/skills-showcase";
+import HomeProjects from "@/components/home-projects";
+import HomeTestimonials from "@/components/home-testimonials";
+import ExperienceShowcaseList from "@/components/experience/experience-showcase-list";
+import { EDUCATION, EXPERIENCE } from "@/data/experience";
+import { SKILLS_DATA } from "@/data/skills";
 import { siteMetadata } from "@/data/siteMetaData.mjs";
 import { scrollToSection } from "@/hooks/useActiveSection";
 
@@ -28,18 +25,17 @@ export default function Home() {
   return (
     <>
       <NextSeo
-        title={siteMetadata.title}
-        description="CleanCraft builds private, air-gapped AI: offline translation, transcription and document intelligence for organizations that can’t rely on public cloud."
+        title={`${siteMetadata.author} | ${siteMetadata.description}`}
+        description={`Portfolio of ${siteMetadata.author}, an AI Engineer specializing in machine learning, NLP, document intelligence, and production-ready air-gapped AI systems.`}
         canonical={siteMetadata.siteUrl}
         openGraph={{
           url: siteMetadata.siteUrl,
-          title: siteMetadata.title,
-          description:
-            "Private, offline-ready AI for translation, transcription, and document intelligence — deployed on your infrastructure.",
+          title: `${siteMetadata.author} - ${siteMetadata.description}`,
+          description: `AI Engineer portfolio featuring RAG systems, multilingual translation, speech transcription, and offline AI deployments by ${siteMetadata.author}.`,
           images: [
             {
               url: `${siteMetadata.siteUrl}${siteMetadata.twitterImage}`,
-              alt: "CleanCraft — Private AI Systems",
+              alt: `${siteMetadata.author} - Portfolio Image`,
             },
           ],
           siteName: siteMetadata.siteName,
@@ -52,7 +48,7 @@ export default function Home() {
           {
             property: "keywords",
             content:
-              "CleanCraft, Private AI, Offline AI, Air-gapped, RAG, Document Intelligence, Whisper, NLLB, FastAPI, Django, NLP",
+              "AI Engineer, Machine Learning, NLP, RAG, Document Intelligence, Whisper, NLLB, FastAPI, Django, Python, Next.js, Portfolio",
           },
         ]}
       />
@@ -64,17 +60,17 @@ export default function Home() {
           />
         )}
       </Head>
-      <CompanyHero />
-      <TrustedBy />
-      <ServicesSection />
-      <WhySection />
-      <WorkSection />
-      <ProcessSection />
-      <PricingSection />
-      <TechSection />
-      <AboutSection />
-      <FaqSection />
-      <ContactSection />
+      <LandingHero />
+      <HomeAbout />
+      <SkillsShowcase skills={SKILLS_DATA} />
+      <HomeProjects />
+      <HomeTestimonials />
+      <ExperienceShowcaseList
+        id="experience"
+        title="Experience"
+        details={EXPERIENCE}
+      />
+      <ExperienceShowcaseList title="Education" details={EDUCATION} />
     </>
   );
 }
